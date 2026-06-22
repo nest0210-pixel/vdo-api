@@ -8,7 +8,8 @@ CORS(app)
 
 @app.route('/get-vdo-otp/<video_id>')
 def get_otp(video_id):
-    url = f"https://api.vdocipher.com/v2/customer/api/videos/{video_id}/otp"
+    # 👇 제가 실수했던 부분입니다. 올바른 VdoCipher API 주소로 수정했습니다!
+    url = f"https://dev.vdocipher.com/api/videos/{video_id}/otp"
     headers = {
         "Authorization": "Apisecret HHYuT5w17YfmOZGm4gFwEAl1GfpSyrMs3NdjyCShlnOIChEhnU4xFrkMwby95Ko5",
         "Content-Type": "application/json"
