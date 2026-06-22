@@ -10,7 +10,7 @@ CORS(app)
 def get_otp(video_id):
     url = f"https://api.vdocipher.com/v2/customer/api/videos/{video_id}/otp"
     headers = {
-        "Authorization": "Apisecret f3803b808dea41a89b49be3b3f6b7e05",
+        "Authorization": "Apisecret HHYuT5w17YfmOZGm4gFwEAl1GfpSyrMs3NdjyCShlnOIChEhnU4xFrkMwby95Ko5",
         "Content-Type": "application/json"
     }
     response = requests.post(url, headers=headers, json={"ttl": 300})
